@@ -1,0 +1,130 @@
+html {
+    overflow-y: scroll;
+}
+
+html,
+body,
+.page {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    font: 400 62.5%/1.19 Arial, Helvetica, sans-serif;
+    color: $clr_def;
+    min-width: $page_min;
+
+    > .page {
+        height: auto;
+        min-height: 100%;
+    }
+}
+.page_i {
+    padding-bottom: $height_footer;
+}
+
+.header {
+
+}
+
+.logo {
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    height: $height_footer;
+    margin-top: -$height_footer;
+}
+
+.row {
+    @include clearfix;
+    margin-left: -$grid_gutter_width / 2;
+    margin-right: -$grid_gutter_width / 2;
+}
+
+.content {
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-8,
+.col-9 {
+    @include box-sizing;
+    float: left;
+    padding-left: $grid_gutter_width / 2;
+    padding-right: $grid_gutter_width / 2;
+    min-height: 1px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-8 {
+    width: 66.66666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+.container{
+    padding-left: $grid_gutter_width / 2;
+    padding-right: $grid_gutter_width / 2;
+}
+.show-more-btn {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 15px;
+    height: 34px;
+    line-height: 36px;
+    text-transform: uppercase;
+    @include inblock;
+    cursor: pointer;
+    background-color: $clr_red;
+    border-radius: 2px;
+    letter-spacing: -0.8px;
+}
+#dropZone {
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+
+    width: 400px;
+    padding: 50px 0;
+    margin: 50px auto;
+
+    background: #eee;
+    border: 1px solid #ccc;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#dropZone.hover {
+    background: #ddd;
+    border-color: #aaa;
+}
+#dropZone.drop {
+    background: #afa;
+    border-color: #0f0;
+}
+#dropZone.error {
+    background: #faa;
+    border-color: #f00;
+}
+
+
