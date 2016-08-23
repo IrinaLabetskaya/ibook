@@ -1,7 +1,7 @@
 (function( $ ) {
     $.fn.myPlugin = function( options ) {
 
-        var settings = $.extend( {
+        var options = $.extend( {
             fileFormat : 'fb2',
             maxFileSize : '1000000'// максимальный размер файла - 1 мб.
         }, options);
